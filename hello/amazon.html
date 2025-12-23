@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        /* Reset and Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.nav-container {
+    display: flex;
+    align-items: center;
+    background: #131921;
+    color: white;
+    padding: 10px;
+}
+.logo img{
+    width: 100px;
+    border-radius: 40px solid rgb(226, 242, 4);
+}
+.search-box {
+    flex: 1;
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 4px;
+    border: none;
+}
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+.option {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* MAIN PRODUCT GRID */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    width: 200px;
+    border: 2px solid #ddd;
+    padding: 25px;
+    text-align: center;
+}
+.product-card {
+    width: 200px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #232f3e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8eSb4lGANjKmXnj-qOz6dX-tvglN7u-0STA&s" alt="Amazon Logo">
+            </div>
+            <input type="text" class="search-box" placeholder="Search Amazon">
+            <div class="header-right">
+                <div class="option">
+                    <span>Hello, Sign in</span>
+                    <span>Account & Lists</span>
+                </div>
+                <div class="option">
+                    <span>Returns</span>
+                    <span>& Orders</span>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="products">
+            <div class="product-card 1">
+                <img src="https://files.cdn.printful.com/o/upload/blog-og-image-upload/2f/2f7870d01efa8f9058a67feb14c45d11_l" alt="Product 1">
+                <p>   </p>
+                <p>$19.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/68/3c/40/683c40ddcbfabcdf3e24f34a1cff1e55.jpg" alt="Product 2">
+                <p>  </p>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card 1">
+                <img src="https://www.apetogentleman.com/wp-content/uploads/2019/12/StreetwearBrandsToCop47.jpg" alt="Product 3">
+                <p>  </p>
+                <p>$9.99</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Amazon Clone</p>
+    </footer>
+</body>
+</html>
